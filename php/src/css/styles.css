@@ -11124,9 +11124,9 @@ body {
 .education-section {
   padding-top: 10rem;
   padding-bottom: 15rem;
-  background: linear-gradient(180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
-
+  background: linear-gradient(180deg, rgba(47,47,47,1) 39%, rgba(105,105,105,1) 100%);
 }
+
 .education-section p {
   margin-bottom: 5rem;
 }
