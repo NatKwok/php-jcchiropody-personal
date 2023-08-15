@@ -1,0 +1,14 @@
+===SETUP APACHE==
+Create Dockerfile (touch Dockerfile)
+Create docker-compose.yml
+Go to ~/.docker/config.json and replace 'credsStore' with 'credStore'
+docker compose up
+Run the image and execute inside your container:
+    docker-php-ext-install mysqli 
+    docker-php-ext-enable mysqli
+    apachectl restart
+
+===SETUP MYSQLi==
+create Dockerfile inside php/src
+modify docker-compose.yml to have db
+go to /usr/local/etc/php/8.2/php.ini and enable extension=mysqli (remove semicolon)

@@ -1,52 +1,67 @@
-# Cache and logs (Symfony2)
-/app/cache/*
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
-
-# Email spool folder
-/app/spool/*
-
-# Cache, session files and logs (Symfony3)
-/var/cache/*
-/var/logs/*
-/var/sessions/*
-!var/cache/.gitkeep
-!var/logs/.gitkeep
-!var/sessions/.gitkeep
-
-# Logs (Symfony4)
-/var/log/*
-!var/log/.gitkeep
-
-# Parameters
-/app/config/parameters.yml
-/app/config/parameters.ini
-
-# Managed by Composer
-/app/bootstrap.php.cache
-/var/bootstrap.php.cache
-/bin/*
-!bin/console
-!bin/symfony_requirements
-/vendor/
-
-# Assets and user uploads
-/web/bundles/
-/web/uploads/
-
+# Directory for creating releases
+/release/
+# Configuration files
+/config.inc.php
+/config.header.inc.php
+/config.footer.inc.php
+# Upload/save dirs
+/upload/
+/save/
+/tmp/
+# For setup script
+/config/
+# ctags
+tags
+# Editor files
+phpmyadmin.wpj
+.projectOptions
+.vimrc
+.project
+.settings
+.buildpath
+.cache
+.idea
+.netbeans
+.vscode
+*.sw[op]
+# Web server files
+web.config
+.htaccess
+# Locales
+/locale/
+# Temporary files to generate locales for Twig
+/twig-templates/
+# Backups
+*~
+# API documentation
+/apidoc/
+/doc/linkcheck/
+# Demo server
+revision-info.php
+# PHP_CodeSniffer
+phpcs.xml
+.phpcs-cache
 # PHPUnit
-/app/phpunit.xml
-/phpunit.xml
-
-# Build data
+phpunit.xml
+/test/bootstrap.php
+.phpunit.result.cache
+# Jenkins
 /build/
-
-# Composer PHAR
-/composer.phar
-
-# Backup entities generated with doctrine:generate:entities command
-**/Entity/*~
-
-# Embedded web-server pid file
-/.web-server-pid
+# Netbeans ide stuff
+/nbproject/
+# Eclipse ide stuff
+/.pydevproject
+# Ant cache
+cache.properties
+# Composer
+composer.lock
+/vendor/
+# NPM
+/node_modules/
+phpstan.neon
+# Infection
+infection.json5
+/public/build/
+/js/dist/
+/setup/
+/themes/
