@@ -10,8 +10,11 @@ $user = 'MYSQL_USER';
 //database user password
 $pass = 'MYSQL_PASSWORD';
 
-// check the MySQL connection status
-$conn = new mysqli($host, $user, $pass);
+// database name
+$mydatabase = 'JC01';
+// check the mysql connection status
+
+$conn = new mysqli($host, $user, $pass, $mydatabase);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } else {
@@ -87,7 +90,7 @@ if (isset($_POST['add'])) {
     if (mysqli_query($conn, $sql)) {
 
         echo "Success";
-        header('Location: index.php');
+        // header('Location: index.php');
     } else {
         echo "You have errors in your form";
     }
